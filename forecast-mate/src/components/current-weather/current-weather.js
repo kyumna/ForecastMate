@@ -1,11 +1,12 @@
 import "./current-weather.css"
-
+import {Tilt} from 'react-tilt'
 import React from 'react'
 
 function CurrentWeather({ data }) {
     return (
         <div className="weather">
-            <div className="top">
+     
+            <Tilt className="top">
                 <div className="multiple">
                     <div className="temp">{Math.round(data.main.temp)}°C</div>
 
@@ -14,8 +15,10 @@ function CurrentWeather({ data }) {
                 </div>
                 <img alt="weather" className="weather-icon" src={`icons/${data.weather[0].icon}.png`}></img>
 
-            </div>
-            <div className="bottom">
+            </Tilt>
+        
+           
+            <Tilt className="bottom">
 
 
              
@@ -37,7 +40,7 @@ function CurrentWeather({ data }) {
                         <span className="value">{data.main.pressure}<span className="no-bold">Pa</span></span>
                         <span className="label">Pressure</span>
                     </div>
-                </div>
+                </Tilt>
             </div>
         
 
