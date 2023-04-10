@@ -1,0 +1,87 @@
+body{
+   min-height: 100vh;
+    background: linear-gradient(#2b1055,#7597de);
+    overflow-x: hidden;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    
+}
+.sec{
+    height: 100vh;
+    z-index: 0;
+    background: #1c0522;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 10000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon{
+    mix-blend-mode: screen;
+}
+
+#text{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    right: -300px;
+    z-index: 9;
+
+}
+
+section img#mount-front{
+    z-index: 10;
+
+
+}
+section img#mountain_behind{
+    z-index: -6;
+
+
+}
+section img#star{
+    z-index: -8;
+
+
+}
+#btn{
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    font-size: 1.5em;
+    display: inline-block;
+    z-index: 9;
+    transform: translateY(100px);
+}

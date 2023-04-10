@@ -4,6 +4,10 @@ import { GEO_API_URL, geoApiOptions } from "../../api";
 
 
 const Search = ({ onSearchChange }) => {
+    const hey={
+        backgroundColor:'red',
+        margin:'4rem'
+    }
 
     const [search, setSearch] = React.useState(null);
 
@@ -29,6 +33,7 @@ const Search = ({ onSearchChange }) => {
     }
     return (
         <AsyncPaginate
+            styles={hey}
             placeholder="Search for city"
             debounceTimeout={600}
             value={search}

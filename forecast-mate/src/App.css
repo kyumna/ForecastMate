@@ -1,4 +1,45 @@
-.container{
-  max-width: 1080px;
-  margin: 20px auto;
+
+body {
+    background: linear-gradient(#8CBDD6,#254ea9);
+    min-height: 100vh;
+    position: relative;
+    top: 0%;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+
+.cloud, .clouds {
+position: absolute;
+background-image: url('./images/cloud.png');
+top: 0;
+left: 0;
+width: 100%;
+z-index: -9;
+min-height: 100%;
+background-size: cover;
+/* background-repeat: no-repeat; */
+animation: animate 190s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 5440px;
+    }
+}
+.search{
+    /* width: 40rem; */
+    /* margin: 3rem auto; */
+    margin: 2rem;
+    
+}
+
+@media only screen and (max-width:905px) {
+    body{
+        overflow-y: scroll;
+        height: unset;
+    }
+    
 }
