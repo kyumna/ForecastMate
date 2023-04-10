@@ -2,75 +2,6 @@
     box-sizing: border-box;
 }
 
-/* .weather {
-    width: 300px;
-    border-radius: 6px;
-    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
-    color: #fff;
-    background-color: #333;
-    margin: 20px auto 0px auto;
-    padding: 0 20px 20px 20px;
-}
-
-.top,
-.bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.city {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1;
-    margin: 0;
-    letter-spacing: 1px;
-}
-
-.description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1;
-    margin: 0;
-
-}
-
-.weather-icon {
-    width: 100px;
-}
-
-.temp {
-    font-weight: 600;
-    font-size: 70px;
-    width: auto;
-    letter-spacing: -5px;
-    margin: 10px 0;
-}
-
-.details {
-    width: 100%;
-    padding-left: 20px;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.label {
-    text-align: left;
-    font-weight: 400;
-    font-size: 12px;
-}
-
-.value {
-    text-align: right;
-    font-weight: 600;
-    font-size: 12px;
-} */
-
 .top {
     border: 1px soild rgba(255, 255, 255, 0.3);
     width: fit-content;
@@ -163,7 +94,7 @@
         width: fit-content;
     }
 }
-@media only screen and (min-width:280px) and (max-width:360px) {
+@media only screen and (min-width:280px) and (max-width:410px) {
     .top {
        
         width: 100%;
@@ -233,7 +164,7 @@
     }
 }
 
-@media only screen and (min-width:360px) and (max-width:540px)  {
+@media only screen and (min-width:410px) and (max-width:540px)  {
     .top {
        
         width: 100%;

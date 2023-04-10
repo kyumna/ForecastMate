@@ -34,6 +34,7 @@ function App() {
   console.log(forecast)
   return (
     <div className="container">
+    
       <div className='cloud'></div>
 
       <div className='search'>
